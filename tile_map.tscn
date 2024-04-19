@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://pbwipthup31e"]
+
+[ext_resource type="Texture2D" uid="uid://cqsihc1wya651" path="res://assets/checkers-sheet.png" id="1_8igbd"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0nxba"]
+resource_name = "tiles"
+texture = ExtResource("1_8igbd")
+texture_region_size = Vector2i(32, 32)
+2:0/0 = 0
+2:0/0/custom_data_0 = "black"
+3:0/0 = 0
+3:0/0/custom_data_0 = "red"
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wywdi"]
+resource_name = "checkers"
+texture = ExtResource("1_8igbd")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/custom_data_0 = "black"
+1:0/0 = 0
+1:0/0/custom_data_0 = "black"
+0:1/0 = 0
+0:1/0/custom_data_0 = "red"
+1:1/0 = 0
+1:1/0/custom_data_0 = "red"
+
+[sub_resource type="TileSet" id="TileSet_36qb4"]
+tile_size = Vector2i(32, 32)
+custom_data_layer_0/name = "color"
+custom_data_layer_0/type = 4
+sources/2 = SubResource("TileSetAtlasSource_0nxba")
+sources/3 = SubResource("TileSetAtlasSource_wywdi")
+
+[node name="TileMap" type="TileMap"]
+texture_filter = 1
+tile_set = SubResource("TileSet_36qb4")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 196610, 0, 65536, 131074, 0, 131072, 196610, 0, 65537, 196610, 0, 131073, 131074, 0, 2, 196610, 0, 65538, 131074, 0, 131074, 196610, 0, 3, 131074, 0, 65539, 196610, 0, 131075, 131074, 0, 4, 196610, 0, 6, 196610, 0, 5, 131074, 0, 7, 131074, 0, 65540, 131074, 0, 65541, 196610, 0, 65542, 131074, 0, 65543, 196610, 0, 196608, 131074, 0, 262144, 196610, 0, 327680, 131074, 0, 393216, 196610, 0, 458752, 131074, 0, 458753, 196610, 0, 458754, 131074, 0, 458755, 196610, 0, 458756, 131074, 0, 458757, 196610, 0, 458758, 131074, 0, 458759, 196610, 0, 131079, 131074, 0, 196615, 196610, 0, 262151, 131074, 0, 327687, 196610, 0, 393223, 131074, 0, 196609, 196610, 0, 262145, 131074, 0, 327681, 196610, 0, 393217, 131074, 0, 196610, 131074, 0, 262146, 196610, 0, 327682, 131074, 0, 393218, 196610, 0, 196611, 196610, 0, 262147, 131074, 0, 327683, 196610, 0, 393219, 131074, 0, 131076, 196610, 0, 196612, 131074, 0, 262148, 196610, 0, 327684, 131074, 0, 393220, 196610, 0, 131077, 131074, 0, 196613, 196610, 0, 262149, 131074, 0, 327685, 196610, 0, 393221, 131074, 0, 131078, 196610, 0, 196614, 131074, 0, 262150, 196610, 0, 327686, 131074, 0, 393222, 196610, 0, 1, 131074, 0)

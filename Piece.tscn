@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1r5t7nbgsaoq"]
+
+[ext_resource type="Texture2D" uid="uid://cqsihc1wya651" path="res://assets/checkers-sheet.png" id="1_k46us"]
+[ext_resource type="Script" path="res://Piece.gd" id="1_uiwh8"]
+
+[node name="Piece" type="Node2D"]
+script = ExtResource("1_uiwh8")
+color = null
+selected = null
+
+[node name="RedIdle" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+texture = ExtResource("1_k46us")
+region_enabled = true
+region_rect = Rect2(0, 32, 32, 32)
+
+[node name="RedSelected" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+texture = ExtResource("1_k46us")
+region_enabled = true
+region_rect = Rect2(32, 32, 32, 32)
+
+[node name="BlackIdle" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+texture = ExtResource("1_k46us")
+region_enabled = true
+region_rect = Rect2(0, 0, 32, 32)
+
+[node name="BlackSelected" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+texture = ExtResource("1_k46us")
+region_enabled = true
+region_rect = Rect2(32, 0, 32, 32)
