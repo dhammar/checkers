@@ -5,8 +5,6 @@
 
 [node name="Piece" type="Node2D"]
 script = ExtResource("1_uiwh8")
-color = null
-selected = null
 
 [node name="RedIdle" type="Sprite2D" parent="."]
 visible = false
@@ -35,3 +33,33 @@ texture_filter = 1
 texture = ExtResource("1_k46us")
 region_enabled = true
 region_rect = Rect2(32, 0, 32, 32)
+
+[node name="RedKingIdle" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+texture = ExtResource("1_k46us")
+region_enabled = true
+region_rect = Rect2(0, 96, 32, 32)
+
+[node name="RedKingSelected" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+texture = ExtResource("1_k46us")
+offset = Vector2(0, -2)
+region_enabled = true
+region_rect = Rect2(32, 94, 32, 32)
+
+[node name="BlackKingIdle" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+texture = ExtResource("1_k46us")
+region_enabled = true
+region_rect = Rect2(0, 64, 32, 32)
+
+[node name="BlackKingSelected" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+texture = ExtResource("1_k46us")
+offset = Vector2(0, 2)
+region_enabled = true
+region_rect = Rect2(32, 62, 32, 32)
